@@ -47,7 +47,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-primary min-h-screen  w-screen  p-4">
+      <div className="bg-primary min-h-screen  w-screen  p-4 pt-16">
         {/* Profile and Details Section */}
         <div className="flex flex-col md:flex-row gap-8">
           {/* Profile Section */}

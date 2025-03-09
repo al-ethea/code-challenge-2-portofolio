@@ -7,7 +7,8 @@ export default function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between w-screen items-center ibm-plex-mono-regular bg-primary text-white text-sm px-16 py-4 border-b border-gray-400 border-opacity-30">
+      {/* Sticky Navbar */}
+      <div className="fixed top-0 left-0 right-0 z-50 flex justify-between w-full items-center ibm-plex-mono-regular bg-primary text-white text-sm px-16 py-4 border-b border-gray-400 border-opacity-30">
         {/* Logo Section */}
         <div className="flex gap-1">
           <h1 className="text-accent">&lt;C/&gt;</h1>
