@@ -47,19 +47,19 @@ export default function Home() {
 
   return (
     <>
-      <div className="bg-primary min-h-screen  w-screen  p-4 pt-16">
+      <div className="bg-primary min-h-screen w-screen max-w-screen p-4 pt-16 overflow-x-hidden">
         {/* Profile and Details Section */}
         <div className="flex flex-col md:flex-row gap-8">
           {/* Profile Section */}
           <div className="md:w-1/3 mx-10 mt-14 border-[2px] rounded-3xl p-2 py-4 shadow-xl space-y-6">
             <div className="avatar flex justify-center pt-10">
-              <div className="rounded-full">
+              <div className="rounded-full relative h-40 w-40">
                 {/* changed pic */}
                 <Image
-                  src="/images/AletheaAzkaAmaliaColorPhotograph-resized.jpg"
+                  src="/images/Pasfoto2.jpg"
                   alt="profile"
-                  height={80}
-                  width={80}
+                  fill
+                  className="object-cover w-full h-full"
                 />
               </div>
             </div>
@@ -197,8 +197,8 @@ export default function Home() {
         <div className="mt-8 mb-16">
           {/* Title and Subtitle */}
           <div className="text-center">
-            <h1 className="text-accent text-2xl">Skills</h1>
-            <h1 className="text-sm mt-2 text-white">
+            <h1 className="text-accent text-3xl">Skills</h1>
+            <h1 className="text-md mt-2 text-white">
               I am striving to always learn and explore new things
             </h1>
           </div>
@@ -289,8 +289,8 @@ export default function Home() {
         <div className="mt-8 mb-16">
           {/* Centered Title and Subtitle */}
           <div className="text-center">
-            <h1 className="text-accent text-2xl">Works</h1>
-            <h1 className="text-sm mt-2 text-white">
+            <h1 className="text-accent text-3xl">Works</h1>
+            <h1 className="text-md mt-2 text-white">
               Projects that I participated in
             </h1>
           </div>
@@ -300,8 +300,8 @@ export default function Home() {
             {/* Work 1: ActiveAxis */}
             <div>
               <div className="py-3 text-center">
-                <h1 className="text-lg text-white">ActiveAxis</h1>
-                <h1 className="text-sm text-white">
+                <h1 className="text-xl text-white font-semibold">ActiveAxis</h1>
+                <h1 className="text-md text-white">
                   Fitness Tracking Mobile App
                 </h1>
               </div>
@@ -339,7 +339,7 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Situation</span>: For my final
                   year project, we were tasked to create a mobile app that can
                   track the user's exercise progress. ActiveAxis integrates
@@ -347,14 +347,14 @@ export default function Home() {
                   calories burned to provide users with a comprehensive overview
                   of their fitness journey.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Task</span>: The goal was to
                   develop a cross-platform app (iOS/Android) that tracks
                   real-time data, integrates with fitness wearables, and
                   provides detailed analytics to help users achieve their
                   fitness goals.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Action</span>: I used React
                   Native for cross-platform development, Node.js for the
                   backend, and FireBase for data storage. The app features
@@ -362,7 +362,7 @@ export default function Home() {
                   with wearable devices, with a responsive and visually
                   appealing interface built using Tailwind CSS.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Result</span>: The app
                   launched successfully, reaching 10,000+ downloads and
                   maintaining an average rating of 4.7 stars. Users reported
@@ -370,13 +370,15 @@ export default function Home() {
                   noticeable increase in workout consistency.
                 </p>
               </div>
-              <hr className="border-t-2 border-accent mx-auto w-[80%] my-6" />
+              <hr className="border-t-2 border-accent mx-auto w-[70%] my-8" />
             </div>
 
             {/* Work 2: Point of Sales Web App */}
             <div>
               <div className="py-3 text-center">
-                <h1 className="text-lg text-white">Point of Sales Web App</h1>
+                <h1 className="text-xl text-white font-semibold">
+                  Point of Sales Web App
+                </h1>
               </div>
               <div className="carousel max-w-2xl mx-auto flex justify-center items-center">
                 <div id="pos-app1" className="carousel-item relative w-full">
@@ -410,27 +412,27 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Situation</span>: The Point of
                   Sales (POS) Web App is designed to streamline and enhance the
                   sales process for small to medium-sized businesses by
                   providing an intuitive and efficient platform for managing
                   sales transactions and inventory.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Task</span>: The goal was to
                   build a user-friendly POS system that allows businesses to
                   process sales, track inventory, and generate reports, all in a
                   responsive web interface.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Action</span>: I developed the
                   app using React for the frontend and Node.js with Express for
                   the backend. I integrated features like real-time sales
                   tracking, inventory management, and sales reporting, ensuring
                   a seamless user experience across devices.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Result</span>: The app
                   successfully reduced transaction times for users and improved
                   inventory management accuracy. It received positive feedback
@@ -438,13 +440,13 @@ export default function Home() {
                   operations for clients.
                 </p>
               </div>
-              <hr className="border-t-2 border-accent mx-auto w-[80%] my-6" />
+              <hr className="border-t-2 border-accent mx-auto w-[70%] my-6" />
             </div>
 
             {/* Work 3: Instagram UI */}
             <div className="flex flex-col">
               <div className="py-3 text-center">
-                <h1 className="text-lg text-white">Instagram UI</h1>
+                <h1 className="text-xl text-white">Instagram UI</h1>
               </div>
               <div className="carousel max-w-2xl mx-auto flex justify-center items-center">
                 <div id="insta1" className="carousel-item  w-full">
@@ -455,26 +457,26 @@ export default function Home() {
                 </div>
               </div>
               <div className="pt-8">
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Situation</span>: The
                   Instagram UI project was created to replicate the look and
                   feel of the popular social media platform, focusing on user
                   interface design and interaction patterns.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Task</span>: The goal was to
                   design a responsive and visually appealing Instagram feed
                   clone, aimed at improving design and front-end development
                   skills.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Action</span>: I used React
                   for building the interface and Tailwind CSS for styling to
                   ensure a smooth and responsive layout. The project involved
                   designing components like posts, comments, and navigation
                   bars, following Instagram’s design guidelines.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10 text-white">
+                <p className="text-md text-justify m-3 mx-20 text-white">
                   <span className="font-semibold">Result</span>: The project was
                   successfully completed with an intuitive UI that mirrors
                   Instagram's core features. It helped improve my front-end
@@ -518,7 +520,7 @@ export default function Home() {
                 <p className="text-sm italic text-cp-font mb-4 mx-6">
                   "{testimonials[index]?.message}"
                 </p>
-                <hr className="border-t-2 border-accent mx-auto w-[80%] my-4" />
+                <hr className="border-t-2 border-accent mx-auto w-[70%] my-6" />
               </div>
             ))}
           </div>
