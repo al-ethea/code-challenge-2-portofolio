@@ -489,8 +489,8 @@ export default function Home() {
         </div>
       </div>
       {/* Testimonials Section */}
-      <div className="testimonial-section py-16 bg-[#1A1E23] max-w-screen">
-        <h1 className="text-accent text-center text-2xl font-semibold pb-8">
+      <div className="testimonial-section py-8 bg-[#1A1E23] max-w-screen">
+        <h1 className="text-accent text-center text-3xl font-semibold pb-8">
           Testimonials
         </h1>
         {!person || person.length === 0 ? (
@@ -531,14 +531,14 @@ export default function Home() {
       <div className="bg-[#1A1E23] h-40 flex flex-col justify-center items-center">
         {/* Centered Title and Subtitle */}
         <div className="text-center">
-          <h1 className="text-accent text-2xl">Contact Me</h1>
-          <h1 className="text-sm mt-2 text-white">
+          <h1 className="text-accent text-3xl">Contact Me</h1>
+          <h1 className="text-md mt-2 text-white">
             I am available for freelance work
           </h1>
         </div>
 
         {/* Centered Buttons */}
-        <div className="space-x-6 pt-4">
+        <div className="space-x-6 pt-8 mb-10">
           <button className="btn bg-[#43454D] text-accent w-[50px] h-[50px] rounded-full hover:text-white">
             <FaGithub className="text-3xl" />
           </button>
