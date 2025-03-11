@@ -54,8 +54,9 @@ export default function Home() {
           <div className="md:w-1/3 mx-10 mt-14 border-[2px] rounded-3xl p-2 py-4 shadow-xl space-y-6">
             <div className="avatar flex justify-center pt-10">
               <div className="rounded-full">
+                {/* changed pic */}
                 <Image
-                  src="/images/AletheaAzkaAmaliaColorPhotograph.jpg"
+                  src="/images/AletheaAzkaAmaliaColorPhotograph-resized.jpg"
                   alt="profile"
                   height={80}
                   width={80}
@@ -142,15 +143,15 @@ export default function Home() {
               <div className="border rounded-3xl w-52 p-8 mt-2 bg-secondary border-none shadow-md space-y-8">
                 <div className="flex items-center">
                   <h1 className="text-5xl text-accent">7</h1>
-                  <h1 className="pl-3">Programming Languages</h1>
+                  <h1 className="pl-3 text-white">Programming Languages</h1>
                 </div>
                 <div className="flex items-center">
                   <h1 className="text-5xl text-accent">5</h1>
-                  <h1 className="pl-3">Development Tools</h1>
+                  <h1 className="pl-3 text-white">Development Tools</h1>
                 </div>
                 <div className="flex items-center">
                   <h1 className="text-5xl text-accent">5</h1>
-                  <h1 className="pl-3">Years of Experience</h1>
+                  <h1 className="pl-3 text-white">Years of Experience</h1>
                 </div>
               </div>
             </div>
@@ -161,7 +162,7 @@ export default function Home() {
         <div className="mx-10 mt-16 ibm-plex-mono-regular">
           {/* Title Section */}
           <div className="border-[2px] border-[#79f2ce] rounded-3xl shadow-xl p-2 mx-auto mb-8 max-w-md">
-            <h1 className="ibm-plex-mono-regular text-3xl text-center">
+            <h1 className="ibm-plex-mono-regular text-3xl text-center text-white">
               About Me
             </h1>
           </div>
@@ -170,21 +171,21 @@ export default function Home() {
           <div className="text-left border-[1px] rounded-3xl p-5 mx-auto max-w-2xl">
             <p className="text-accent text-[12px]">&lt;p&gt;</p>
             <h1 className="text-accent text-[26px] mb-4">Hello!</h1>
-            <p className="text-[15px] mb-4">
+            <p className="text-[15px] mb-4 text-white">
               My name is Azka and I specialize in web development that utilizes
               HTML, CSS, JS, and REACT etc.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-white">
               I also learned a variety of programming languages in university,
               such as Python, Java, PHP, and SQL. Having worked in a group
               project several times, I am experienced in utilizing project
               management tools, such as Taiga.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-white">
               Other than that, I possess proficient skills in English and
               Japanese.
             </p>
-            <p className="mb-2">
+            <p className="mb-2 text-white">
               When I'm not coding, I like to listen to my favorite bands and
               read mangas.
             </p>
@@ -197,7 +198,7 @@ export default function Home() {
           {/* Title and Subtitle */}
           <div className="text-center">
             <h1 className="text-accent text-2xl">Skills</h1>
-            <h1 className="text-sm mt-2">
+            <h1 className="text-sm mt-2 text-white">
               I am striving to always learn and explore new things
             </h1>
           </div>
@@ -215,7 +216,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-2">HTML</p>
+                <p className="mt-2 text-white">HTML</p>
               </div>
               <div className="text-center">
                 <div className="text-white relative h-10 w-10 mx-auto">
@@ -226,7 +227,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-2">CSS</p>
+                <p className="mt-2 text-white">CSS</p>
               </div>
             </div>
 
@@ -241,7 +242,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-2">JS</p>
+                <p className="mt-2 text-white">JS</p>
               </div>
               <div className="text-center">
                 <div className="text-white relative h-10 w-10 mx-auto">
@@ -252,7 +253,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-2">REACT</p>
+                <p className="mt-2 text-white">REACT</p>
               </div>
             </div>
 
@@ -267,7 +268,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-2">PHP</p>
+                <p className="mt-2 text-white">PHP</p>
               </div>
               <div className="text-center">
                 <div className="text-white relative h-10 w-10 mx-auto">
@@ -278,7 +279,7 @@ export default function Home() {
                     className="object-cover"
                   />
                 </div>
-                <p className="mt-2">JAVA</p>
+                <p className="mt-2 text-white">JAVA</p>
               </div>
             </div>
           </div>
@@ -289,7 +290,9 @@ export default function Home() {
           {/* Centered Title and Subtitle */}
           <div className="text-center">
             <h1 className="text-accent text-2xl">Works</h1>
-            <h1 className="text-sm mt-2">Projects that I participated in</h1>
+            <h1 className="text-sm mt-2 text-white">
+              Projects that I participated in
+            </h1>
           </div>
 
           {/* Projects Section */}
@@ -297,8 +300,10 @@ export default function Home() {
             {/* Work 1: ActiveAxis */}
             <div>
               <div className="py-3 text-center">
-                <h1 className="text-lg">ActiveAxis</h1>
-                <h1 className="text-sm">Fitness Tracking Mobile App</h1>
+                <h1 className="text-lg text-white">ActiveAxis</h1>
+                <h1 className="text-sm text-white">
+                  Fitness Tracking Mobile App
+                </h1>
               </div>
 
               {/* Carousel with Centered Images */}
@@ -334,7 +339,7 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Situation</span>: For my final
                   year project, we were tasked to create a mobile app that can
                   track the user's exercise progress. ActiveAxis integrates
@@ -342,14 +347,14 @@ export default function Home() {
                   calories burned to provide users with a comprehensive overview
                   of their fitness journey.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Task</span>: The goal was to
                   develop a cross-platform app (iOS/Android) that tracks
                   real-time data, integrates with fitness wearables, and
                   provides detailed analytics to help users achieve their
                   fitness goals.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Action</span>: I used React
                   Native for cross-platform development, Node.js for the
                   backend, and FireBase for data storage. The app features
@@ -357,7 +362,7 @@ export default function Home() {
                   with wearable devices, with a responsive and visually
                   appealing interface built using Tailwind CSS.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Result</span>: The app
                   launched successfully, reaching 10,000+ downloads and
                   maintaining an average rating of 4.7 stars. Users reported
@@ -371,7 +376,7 @@ export default function Home() {
             {/* Work 2: Point of Sales Web App */}
             <div>
               <div className="py-3 text-center">
-                <h1 className="text-lg">Point of Sales Web App</h1>
+                <h1 className="text-lg text-white">Point of Sales Web App</h1>
               </div>
               <div className="carousel max-w-2xl mx-auto flex justify-center items-center">
                 <div id="pos-app1" className="carousel-item relative w-full">
@@ -405,27 +410,27 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Situation</span>: The Point of
                   Sales (POS) Web App is designed to streamline and enhance the
                   sales process for small to medium-sized businesses by
                   providing an intuitive and efficient platform for managing
                   sales transactions and inventory.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Task</span>: The goal was to
                   build a user-friendly POS system that allows businesses to
                   process sales, track inventory, and generate reports, all in a
                   responsive web interface.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Action</span>: I developed the
                   app using React for the frontend and Node.js with Express for
                   the backend. I integrated features like real-time sales
                   tracking, inventory management, and sales reporting, ensuring
                   a seamless user experience across devices.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Result</span>: The app
                   successfully reduced transaction times for users and improved
                   inventory management accuracy. It received positive feedback
@@ -439,7 +444,7 @@ export default function Home() {
             {/* Work 3: Instagram UI */}
             <div className="flex flex-col">
               <div className="py-3 text-center">
-                <h1 className="text-lg">Instagram UI</h1>
+                <h1 className="text-lg text-white">Instagram UI</h1>
               </div>
               <div className="carousel max-w-2xl mx-auto flex justify-center items-center">
                 <div id="insta1" className="carousel-item  w-full">
@@ -450,26 +455,26 @@ export default function Home() {
                 </div>
               </div>
               <div className="pt-8">
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Situation</span>: The
                   Instagram UI project was created to replicate the look and
                   feel of the popular social media platform, focusing on user
                   interface design and interaction patterns.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Task</span>: The goal was to
                   design a responsive and visually appealing Instagram feed
                   clone, aimed at improving design and front-end development
                   skills.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Action</span>: I used React
                   for building the interface and Tailwind CSS for styling to
                   ensure a smooth and responsive layout. The project involved
                   designing components like posts, comments, and navigation
                   bars, following Instagram’s design guidelines.
                 </p>
-                <p className="text-xs text-justify m-3 mx-10">
+                <p className="text-xs text-justify m-3 mx-10 text-white">
                   <span className="font-semibold">Result</span>: The project was
                   successfully completed with an intuitive UI that mirrors
                   Instagram's core features. It helped improve my front-end
@@ -525,7 +530,9 @@ export default function Home() {
         {/* Centered Title and Subtitle */}
         <div className="text-center">
           <h1 className="text-accent text-2xl">Contact Me</h1>
-          <h1 className="text-sm mt-2">I am available for freelance work</h1>
+          <h1 className="text-sm mt-2 text-white">
+            I am available for freelance work
+          </h1>
         </div>
 
         {/* Centered Buttons */}
